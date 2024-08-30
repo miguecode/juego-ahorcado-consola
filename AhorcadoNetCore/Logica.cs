@@ -11,19 +11,19 @@ namespace AhorcadoNetCore
         {
             arrayPalabras[0] = "PERRO";
             arrayPalabras[1] = "GATO";
-            arrayPalabras[2] = "CABALLO";
-            arrayPalabras[3] = "VACACIONES";
-            arrayPalabras[4] = "APROBAR";
-            arrayPalabras[5] = "GUITARRA";
-            arrayPalabras[6] = "ESTUDIAR";
-            arrayPalabras[7] = "ANIVERSARIO";
-            arrayPalabras[8] = "COMPUTADORA";
+            arrayPalabras[2] = "OBJETO";
+            arrayPalabras[3] = "CALAMAR";
+            arrayPalabras[4] = "INVIERNO";
+            arrayPalabras[5] = "VERANO";
+            arrayPalabras[6] = "PLANETARIO";
+            arrayPalabras[7] = "DEPORTES";
+            arrayPalabras[8] = "PROGRAMACION";
         }
 
         public static void AgregarPalabraNueva()
         {
             string datoIngresado;
-            Console.WriteLine("Ingrese nueva palabra");
+            Console.WriteLine("Ingrese nueva palabra:");
             datoIngresado = Console.ReadLine().ToUpper().Trim();
             while (!Funciones.ValidarSiPalabraEsValida(datoIngresado))
             {
@@ -58,7 +58,7 @@ namespace AhorcadoNetCore
             foreach (char letra in mostrarArrayProgreso)
             {
                 recuento++;
-                mostrarArrayProgreso[recuento] = '-';
+                mostrarArrayProgreso[recuento] = '_';
             }
 
             while (vidas > 0)
@@ -82,7 +82,7 @@ namespace AhorcadoNetCore
                     Console.WriteLine("Te quedan solo {0} vidas!", vidas);
                 }
                 Console.Write("\n");
-                Console.WriteLine("Estado actual: " + mostrarProgreso);
+                Console.WriteLine("Palabra: " + mostrarProgreso);
                 Console.Write("\n\n\n");
                 Console.Write("Ingresa una letra: ");
 
@@ -218,7 +218,7 @@ namespace AhorcadoNetCore
             return respuesta;
         }
 
-        public static void MostrarPalabras()  //desarrollar
+        public static void MostrarPalabras()
         {
             Console.ForegroundColor = ConsoleColor.Magenta;
             Console.WriteLine("Lista de palabras cargadas: \n");
@@ -234,7 +234,7 @@ namespace AhorcadoNetCore
             }
         }
 
-        public static void EliminarPalabra()  //desarrollar
+        public static void EliminarPalabra()
         {
             string palabraAEliminar;
             int recuento = 0;
@@ -250,7 +250,7 @@ namespace AhorcadoNetCore
 
             foreach (string itemPalabra in arrayPalabras)
             {
-                if(itemPalabra == palabraAEliminar)
+                if (itemPalabra == palabraAEliminar)
                 {
                     arrayPalabras[recuento] = null;
                     break;

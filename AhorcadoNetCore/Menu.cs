@@ -14,12 +14,10 @@ namespace AhorcadoNetCore
             do
             {
                 Console.Clear();
-                DibujarEncabezado("Bienvenidos");
+                DibujarEncabezado("Bienvenido al Ahorcado!");
+                DibujarMenuPrincipal();
 
-                OpcionesMenuPrincipal();
-
-                opcionIngresada = Funciones.ValidarEntero(1, 5);
-
+                opcionIngresada = Funciones.ValidarEntero(0, 4);
                 Console.Clear();
 
                 switch (opcionIngresada)
@@ -30,27 +28,25 @@ namespace AhorcadoNetCore
                             reiniciarJuego = Logica.ComenzarJuego();
 
                         } while(reiniciarJuego);
-
                         Console.Clear();
-
-                        break;
+                    break;
                     case 2:
                         Logica.AgregarPalabraNueva();
-                        break;
+                    break;
 
                     case 3:
                         Logica.MostrarPalabras();
                         Funciones.PresioneUnaTeclaParaContinuar();
-                        break;
+                    break;
 
                     case 4:
                         Logica.EliminarPalabra();
-                        break;
+                    break;
 
-                    case 5:
+                    case 0:
                         Console.WriteLine("Gracias por jugar!");
                         seguirEnElPrograma = false;
-                        break;
+                    break;
                 }
 
             } while (seguirEnElPrograma);
@@ -60,42 +56,40 @@ namespace AhorcadoNetCore
 
         public static void DibujarEncabezado(string textoAMostrar)
         {
-            string titulo = "*********** " + textoAMostrar.Trim() + " ***********";
-            string asterisquitos = string.Empty;
+            string titulo = "*****  " + textoAMostrar.Trim() + "  *****";
+            string asteriscos = string.Empty;
 
             for (int i = 0; i < titulo.Length; i++)
             {
-                asterisquitos += "*";
+                asteriscos += "*";
             }
 
             Console.ForegroundColor = ConsoleColor.Green;
 
-            Console.WriteLine(asterisquitos);
+            Console.WriteLine(asteriscos);
             Console.WriteLine(titulo);
-            Console.WriteLine(asterisquitos);
+            Console.WriteLine(asteriscos);
             Console.WriteLine();
-
         }
 
-        static void OpcionesMenuPrincipal()
+        static void DibujarMenuPrincipal()
         {
-            //for (int i = 0; i < 10; i++)
-            //{
-            Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.WriteLine("Menu Principal:");
+            Console.ForegroundColor = ConsoleColor.DarkGreen;
+            Console.WriteLine("Menu Principal");
+            Console.WriteLine();
 
-            Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine("1. Iniciar Juego");
-            Console.WriteLine("2. Agregar Palabra Nueva");
-            Console.WriteLine("3. Mostrar Palabras Cargadas");
-            Console.WriteLine("4. Eliminar Palabra");
-            Console.WriteLine("5. Salir");
-            
-            Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.WriteLine("Ingrese la opción deseada");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine("| 1 | Iniciar Juego");
+            Console.WriteLine("| 2 | Agregar Palabra Nueva");
+            Console.WriteLine("| 3 | Mostrar Palabras Cargadas");
+            Console.WriteLine("| 4 | Eliminar Palabra");
+            Console.WriteLine("| 0 | Salir");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.DarkGreen;
+            Console.WriteLine("Ingrese la opcion deseada:");
 
             Console.ResetColor();
-            //}
         }
   }
 }
