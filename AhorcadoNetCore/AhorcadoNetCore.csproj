@@ -5,6 +5,11 @@
     <TargetFramework>net6.0</TargetFramework>
     <Copyright>Creado por Lucas Rodriguez</Copyright>
     <Company>$(Authors)</Company>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="favicon.ico" />
+  </ItemGroup>
 
 </Project>

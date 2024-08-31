@@ -57,7 +57,7 @@ namespace AhorcadoNetCore
 
             while (!char.IsLetter(letra))
             {
-                Console.WriteLine("Por favor,ingresá una letra valida");
+                Console.WriteLine("Por favor,ingresa una letra valida");
                 letra = Console.ReadKey(true).KeyChar;
             }
 
@@ -100,7 +100,7 @@ namespace AhorcadoNetCore
             string datoIngresado;
 
             Console.ForegroundColor = ConsoleColor.DarkGreen;
-            Console.WriteLine("\nDesea continuar " + auxUbicacion.ToUpper() + "?\n");
+            Console.WriteLine("\nDesea continuar " + auxUbicacion + "?\n");
 
             MostrarPresionarTecla("S", " para reiniciar el juego");
             MostrarPresionarTecla("N", " para volver al Menu Principal");

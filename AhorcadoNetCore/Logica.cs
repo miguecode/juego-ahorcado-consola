@@ -134,15 +134,15 @@ namespace AhorcadoNetCore
             if (victoria)
             {
                 Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine("\n\nGANASTEEEEEEEEEE!!! FELICIDADES!!!");
+                Console.WriteLine("\n\nGANASTEEEEEEEEEE, FELICIDADES!!!");
             }
             else
             {
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("\n\nNOOOOOOOOOO!!! PERDISTE!!!");
+                Console.WriteLine("\n\nNOOOOOOOOOO, PERDISTE!!!");
             }
             Console.ResetColor();
-            return Funciones.SeguirEn("Jugando");
+            return Funciones.SeguirEn("jugando");
 
         }
 
