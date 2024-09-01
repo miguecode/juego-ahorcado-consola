@@ -18,13 +18,13 @@ Así se ve la pantalla principal al iniciar el programa.
 
 ## 😁 Escenario de victoria
 
-Así se ve cuando ganas la partida.
+Así se ve la pantalla cuando ganas la partida.
 
 <img src="https://github.com/user-attachments/assets/f5c55de9-efc8-4f97-9959-53b6a7405e6f" width="450"/>
 
 ## ☠️ Escenario de derrota
 
-Así se ve cuando perdes la partida.
+Así se ve la pantalla cuando perdes la partida.
 
 <img src="https://github.com/user-attachments/assets/52326442-1de8-4e00-a2ce-5e3025f21c9a" width="450"/>
 
