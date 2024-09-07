@@ -65,3 +65,6 @@ Así se ve la pantalla cuando perdes la partida.
 ## 📌 Aclaraciones
 - Fue creado en 2022, mientras cursaba la carrera de Tecnicatura Universitaria en Programación, en la Universidad Tecnológica Nacional.
 - No se aceptan contribuciones ni está bajo ninguna licencia específica.
+
+## 🗃️ Otros proyectos similares
+- [Maxikiosco Junior - Aplicación de escritorio en .NET con C#](https://github.com/Leumig/CSharp-.NET-Kiosco-Junior)
