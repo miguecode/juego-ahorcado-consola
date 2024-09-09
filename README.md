@@ -68,3 +68,4 @@ Así se ve la pantalla cuando perdes la partida.
 
 ## 🗃️ Otros proyectos similares
 - [Maxikiosco Junior - Aplicación de escritorio en .NET con C#](https://github.com/Leumig/CSharp-.NET-Kiosco-Junior)
+- [Buffet - Aplicación de consola en .NET con C#](https://github.com/Leumig/CSharp-Buffet-Consola)
