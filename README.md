@@ -1,6 +1,6 @@
 # 🕹️ Juego Ahorcado - Aplicación de Consola en C#
 
-Este proyecto es una aplicación de consola, fue hecho en 2022 y simula el juego del Ahorcado. El usuario puede jugar cuantas veces quiera, y hasta tiene la opción de agregar o borrar palabras del sistema. Desarrollado en .NET usando C#.
+Este proyecto es una aplicación de consola, fue hecho en 2022 y simula el juego del Ahorcado. Además de jugar, el usuario tiene la opción de agregar o borrar palabras del sistema. Desarrollado en .NET usando C#.
 
 ## 📘 Reglas del Juego
 
