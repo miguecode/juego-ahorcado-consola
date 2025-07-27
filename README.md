@@ -2,7 +2,7 @@
 
 Este proyecto es una aplicación de consola, fue hecho en 2022 y simula el juego del Ahorcado. Además de jugar, el usuario tiene la opción de agregar o borrar palabras del sistema. Desarrollado en .NET usando C#.
 
-## 📘 Reglas del Juego
+## 📘 Reglas del Jueg
 
 - El ahorcado (también llamado colgado) es un juego de adivinanzas de lápiz y papel para dos o más jugadores. Un jugador piensa en una palabra, frase u oración y el otro trata de adivinarla según lo que sugiere por letras o dentro de un cierto número de oportunidades.
 - En este caso, el sistema elige automáticamente una palabra de forma aleatoria entre las que tiene cargadas, para que el jugador trate de adivinarla. 
